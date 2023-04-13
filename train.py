@@ -37,8 +37,9 @@ disp = ConfusionMatrixDisplay.from_estimator(
 plt.savefig("confusion_matrix.png")
 
 
-
+'''
 y_pred = model.predict(x_test)
 
 data = pd.DataFrame({'predicted': y_pred,'actual':y_test})
 data.to_csv("classes.csv",index=False)
+'''

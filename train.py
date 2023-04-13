@@ -34,7 +34,7 @@ with open("metrics.txt", "w") as outfile:
 disp = ConfusionMatrixDisplay.from_estimator(
     model, x_test, y_test, normalize="true", cmap=plt.cm.Blues
 )
-plt.savefig("confusion_matrix.png")
+plt.savefig("confusion_plot.png")
 
 
 #crate csv file with actual and predicted value

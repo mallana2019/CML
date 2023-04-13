@@ -6,7 +6,7 @@ stages:
    
    
     metrics:
-    - metrics.json:
+    - metrics.txt:
          cache: false
     plots:
     - confusion_plot.png:

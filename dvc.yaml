@@ -1,0 +1,12 @@
+stages:
+  train:
+    cmd: python train.py
+    deps:
+    - train.py
+   
+    outs:
+    - confusion_matrix.png
+    - classes.csv
+    metrics:
+    - metrics.json:
+         cache: false

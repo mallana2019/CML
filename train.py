@@ -21,7 +21,7 @@ x_train, x_test, y_train, y_test = train_test_split(
 
 
 from sklearn.linear_model import LogisticRegression
-model = DecisionTreeClassifier(random_state=0).fit(x_train, y_train)
+model =RandomForestClassifier(random_state=0).fit(x_train, y_train)
 
 acc = model.score(x_test, y_test)
 print(acc)
